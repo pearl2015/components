@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:gravity="center"
+    android:background="@drawable/login_bj"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/ll01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/txtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/input"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/txtusername_tips"
+            android:inputType="none" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/input"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/txtpassword_tips"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:id="@+id/ll02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            >
+
+            <CheckBox
+                android:id="@+id/cbPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cbpass_txt"
+                />
+
+            <CheckBox
+                android:id="@+id/cbAuto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cbauto_txt"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/login_btn"
+            android:text="@string/btnlogin_txt"
+            android:textSize="25sp"
+            android:textColor="#FFF"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
